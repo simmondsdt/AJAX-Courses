@@ -1,0 +1,29 @@
+<h2> Ajax Course </h1>
+<hr />
+
+<form id='add-course-form' method='POST' action='api/v1/courses'>
+  <label>Course Title</label>
+    <input id='course-title' type='text' name='course[title]' required />
+    <br />
+
+  <label>Course Code</lable>
+    <input id='course-code' type='text' name='course[code]' required />
+    <br />
+
+  <label>Course Description</label>
+    <textarea id='course-description' name='course[description]' ></textarea>
+    <br />
+
+  <input type='checkbox' id='course-active' name='course[active]' />
+    <label for='course-active'>Course Active?</label>
+    <br />
+
+  <input type='submit' class='btn black white-text' />
+</form>
+<br />
+
+<h2>Course List</h2>
+<button id='get-courses' type ='button' class='btn'>Get Courses</button>
+<br />
+<div id='courses' class='row'>
+</div>
